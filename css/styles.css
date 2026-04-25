@@ -219,7 +219,7 @@ body {
 }
 
 .hero-button {
-  margin-top: 36px;
+  margin-top: 72px;
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
@@ -366,7 +366,7 @@ body {
   grid-template-columns: 1fr;
   row-gap: 48px;
 }
-  .portfolio-item {
+.portfolio-item {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -514,6 +514,7 @@ body {
 
 .footer-subscribe {
   margin-left: 0;
+  text-align: center;
 }
 
 .footer-subscribe-form {
@@ -989,7 +990,7 @@ body {
   .hero-title {
     max-width: 496px;
   }
- .hero-button {
+  .hero-button {
     margin-top: 36px;
   }
 
@@ -1054,6 +1055,7 @@ body {
 
   .footer-subscribe {
     width: 453px;
+    text-align: left;
   }
 
   .footer-subscribe-form {
@@ -1169,7 +1171,7 @@ body {
   .team-item {
     width: calc((100% - 72px) / 4);
   }
- .portfolio-item {
+  .portfolio-item {
     box-shadow: none;
   }
 
