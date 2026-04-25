@@ -219,7 +219,7 @@ body {
 }
 
 .hero-button {
-  margin-top: 72px;
+  margin-top: 36px;
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
@@ -274,10 +274,11 @@ body {
 
 .features-subtitle {
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .features-text {
@@ -365,8 +366,11 @@ body {
   grid-template-columns: 1fr;
   row-gap: 48px;
 }
-
-.portfolio-item {
+  .portfolio-item {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: box-shadow var(--transition);
 }
 
@@ -466,6 +470,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+  text-align: left;
 }
 
 .footer-social {
@@ -984,7 +989,14 @@ body {
   .hero-title {
     max-width: 496px;
   }
+ .hero-button {
+    margin-top: 36px;
+  }
 
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1101,7 +1113,13 @@ body {
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero-desktop.jpg");
   }
+  .hero-button {
+    margin-top: 48px;
+  }
 
+  .section {
+    padding: 120px 0;
+  }
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -1136,6 +1154,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    text-align: left;
   }
 
   .features-text {
@@ -1150,13 +1169,22 @@ body {
   .team-item {
     width: calc((100% - 72px) / 4);
   }
+ .portfolio-item {
+    box-shadow: none;
+  }
 
   .portfolio-list {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 48px;
   }
-
+  .portfolio-item:hover,
+  .portfolio-item:focus-within {
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
   .footer {
     padding: 100px 0;
   }
