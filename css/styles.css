@@ -83,7 +83,6 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 56px;
 }
 
@@ -188,7 +187,7 @@ body {
 
 /* ================= HERO ================= */
 .hero {
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 72px 0;
   text-align: center;
